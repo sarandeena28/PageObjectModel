@@ -17,7 +17,6 @@ public class LoginAndLogout extends ProjectSpecificMethods{
 		testCategory="Regression";
 		excelFileName="Login";
 	}
-	
 	@Test(dataProvider="fetchData")
 	public void loginTest(String Username,String Password) throws IOException {
 		

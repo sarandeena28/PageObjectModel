@@ -13,7 +13,11 @@ public class DeleteLead extends ProjectSpecificMethods {
 	@BeforeTest
 	public void setFile() {
 		excelFileName="DeleteLead";
+		testName="DeleteLead";
+		testCategory="Functional";
+		testAuthor="Saranya";
 	}
+	
 	
 	@Test(dataProvider="fetchData")
 	public void deleteLead(String Username,String Password,String Phonenumber) throws InterruptedException, IOException {

@@ -14,8 +14,12 @@ public class CreateLead extends ProjectSpecificMethods {
 	@BeforeTest
 	public void setFile() {
 		excelFileName="CreateLead";
+		testName="CreateLead";
+		testDesc="CreateLead in positive flow";
+		testCategory="Functional";
+		testAuthor="Saranya";
+		
 	}
-	
 	
 	@Test(dataProvider="fetchData")
 	public void createLead(String Username,String Password,String companyName,String firstName,String lastName,String Phonenumber) throws IOException {

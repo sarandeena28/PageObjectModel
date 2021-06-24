@@ -13,7 +13,12 @@ public class DuplicateLead extends ProjectSpecificMethods{
 	@BeforeTest
 	public void setFile() {
 		excelFileName="DuplicateLead";
+		testName="DuplicateLead";
+		testDesc="DuplicateLead in positive flow";
+		testCategory="Functional";
+		testAuthor="Saranya";
 	}
+	
 	@Test(dataProvider="fetchData")
 	public void duplicateLead(String Username,String Password,String Phonenumber) throws InterruptedException, IOException {
 		

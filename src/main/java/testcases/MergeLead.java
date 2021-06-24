@@ -12,12 +12,15 @@ public class MergeLead extends ProjectSpecificMethods{
 	@BeforeTest
 	public void setFile() {
 		excelFileName="MergeLead";
+		testName="MergeLead";
+		testDesc="MergeLead in positive flow";
+		testCategory="Functional";
+		testAuthor="Saranya";
 	}
 	
 	@Test(dataProvider="fetchData")
 	public void mergeLead(String Username,String Password,String firstname,String Firstname) throws InterruptedException, IOException {
 		
-		//LoginPage lp=new LoginPage();
 		new LoginPage(driver)
 		.enterUsername(Username)
 		.enterPassword(Password)
