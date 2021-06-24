@@ -18,6 +18,7 @@ public class EditLead extends ProjectSpecificMethods{
 		testCategory="Functional";
 		testAuthor="Saranya";
 	}
+	
 	@Test(dataProvider="fetchData")
 	public void editLead(String Username,String Password,String Phonenumber,String companyName) throws InterruptedException, IOException {
 		

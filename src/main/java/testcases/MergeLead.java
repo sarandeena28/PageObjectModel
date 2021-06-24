@@ -21,7 +21,6 @@ public class MergeLead extends ProjectSpecificMethods{
 	@Test(dataProvider="fetchData")
 	public void mergeLead(String Username,String Password,String firstname,String Firstname) throws InterruptedException, IOException {
 		
-		//LoginPage lp=new LoginPage();
 		new LoginPage(driver)
 		.enterUsername(Username)
 		.enterPassword(Password)

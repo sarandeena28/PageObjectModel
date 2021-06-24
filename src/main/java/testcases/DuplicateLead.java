@@ -18,6 +18,7 @@ public class DuplicateLead extends ProjectSpecificMethods{
 		testCategory="Functional";
 		testAuthor="Saranya";
 	}
+	
 	@Test(dataProvider="fetchData")
 	public void duplicateLead(String Username,String Password,String Phonenumber) throws InterruptedException, IOException {
 		

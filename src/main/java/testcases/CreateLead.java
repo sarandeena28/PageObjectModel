@@ -21,7 +21,6 @@ public class CreateLead extends ProjectSpecificMethods {
 		
 	}
 	
-	
 	@Test(dataProvider="fetchData")
 	public void createLead(String Username,String Password,String companyName,String firstName,String lastName,String Phonenumber) throws IOException {
 		
