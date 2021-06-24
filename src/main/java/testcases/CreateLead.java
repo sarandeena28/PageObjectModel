@@ -14,6 +14,11 @@ public class CreateLead extends ProjectSpecificMethods {
 	@BeforeTest
 	public void setFile() {
 		excelFileName="CreateLead";
+		testName="CreateLead";
+		testDesc="CreateLead in positive flow";
+		testCategory="Functional";
+		testAuthor="Saranya";
+		
 	}
 	
 	
